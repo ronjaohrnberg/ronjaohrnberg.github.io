@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+      .serif {
+      font-family: "Times New Roman", Times, serif;
+      }
+
+      .sansserif {
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .monospace {
+      font-family: "Lucida Console", Courier, monospace;
+      }
+      
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      }
+
+      li {
+      float: left;
+      }
+
+      li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+      background-color: #111;
+      }
+
+      .active {
+      background-color: #222;
+      }
+
+      * {
+      box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+      font-family: sansserif;
+      padding: 20px;
+      background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+      float: center;
+      width: 100%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+      float: center;
+      width:5%;
+      padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+      background-color: #aaa;
+      width: 65%;
+      padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+
+      /* Footer */
+      .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+      }
+      }
+
+    </style>
+    
+    <title>Blog - Ronja Öhrnberg</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a class="active" href="blog.html">Blog</a></li>
+    </ul>
+
+    <div class="header">
+      <h3>My blog</h3>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+	<div class="card">
+	  
+	  <h2>My journey into Effective Altruism</h2>
+	  <h5>Ronja, Jun 23, 2020</h5>
+	 <!-- <div class="fakeimg" style="height:200px;">Image</div>-->
+	  <p>Last year, I met an acquaintance at a university fair. We hadn't been talking in a couple of years, but in that time, he had seemingly founded EA Helsinki, my now local group. I chatted with him for a little while, and as I'd heard about Effective Altruism and was slightly interested, I decided to give it a go. Although I haven't been very active, I've been learning new things, and that's always nice!</p>
+	  <p>The most interesting happening I took part in this year (from Jun 13th to Jun 14th) was EAGxVirtual, a virtual global conference. Most years it has been a physical conference, but this time because of the coronavirus situation,the event took place online. I was planning to mostly watch the live talks - since I'm so new in the whole scene, I was afraid I wouldn't have much to offer to the discussions. And I was sort of right: the icebreaker sessions, where you have 8 minutes long conversations with one person and then switch to another person and topic around the same theme, were a bit too much to me. Being an introverted soul, and not knowing a lot about the topics discussed were a combination that made me (and possibly the other person as well) uncomfortable enough not to get the conversation flowing smoothly. However, I ended up having one-on-one discussions with two persons who were both studying science, and they were enjoyable discussions mostly concerning how physics could be involved in EA. 
+	  </p>
+	  <p>I'm still figuring out what do I want to do EA-wise. Ideally, I would want to link it to physics, but I haven't found any good ideas for that. The journey continues. </p>
+	</div>
+
+<!--	
+	<div class="card">
+	  <h2>TITLE HEADING</h2>
+	  <h5>Title description, Sep 2, 2017</h5>
+	  <div class="fakeimg" style="height:200px;">Image</div>
+	  <p>Some text..</p>
+	  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+	</div>  
+-->
+	  </div>
+     </body>
+</html>
+

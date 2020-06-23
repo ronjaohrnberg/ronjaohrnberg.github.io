@@ -3,6 +3,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
+      .serif {
+      font-family: "Times New Roman", Times, serif;
+      }
+
+      .sansserif {
+      font-family: <!--Arial, Helvetica,--> sans-serif;
+      }
+
+      .monospace {
+      font-family: "Lucida Console", Courier, monospace;
+      }
+      
       ul {
       list-style-type: none;
       margin: 0;
@@ -51,7 +64,8 @@
       .column {
       float: left;
       width: 50%;
-      padding: 15px;
+      padding: 20px;
+
       }
 
 
@@ -62,26 +76,71 @@
       clear: both;
       }
 
+      .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+      font-family: sansserif;
+      padding: 20px;
+      background: #f1f1f1;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+      float: center;
+      width: 100%;
+      }
+      /* Add a card effect for articles */
+      .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      }
+      
+      
+      
     </style>
-    <title>CV</title>
+    <title>CV - Ronja Öhrnberg</title>
   </head>
   <body>
     <ul>
-      <li><a  href="https://ronjaohrnberg.github.io/">Home</a></li>
+      <li><a  href="index.html">Home</a></li>
       <li><a class="active" href="cv.html">CV</a></li>
-      <!--<li><a href="#contact">Contact</a></li>-->
-      </ul>
-    <h1 style="text-align:center;">Curriculum Vitae</h1>
-    <p>aka all the thingus I've done'd</p>
-    <h2 class="code-line" style="text-align:center;"><a id="RONJA_HRNBERG_19"></a>RONJA ÖHRNBERG</h2>
-<p class="has-line-data" style="text-align:center;"><a href="mailto:ronja.ohrnberg@helsinki.fi">ronja.ohrnberg@helsinki.fi</a></p>
+      <li><a href="blog.html">Blog</a></li>
+</ul>
+
+<div class="header">
+  <h3>Curriculum Vitae</h3>
+</div>
+<!--<h1 style="text-align:center;" class="sansserif">Curriculum Vitae</h1>-->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card"> 
+    <!--  <div class="column"> -->
+<!--<div class="header" style="font-size:16px">-->
+    <h2 class="sansserif" class="code-line" style="text-align:center;"><a id="RONJA_HRNBERG_19"></a>RONJA ÖHRNBERG</h2>
+<p class="sansserif" class="has-line-data" style="text-align:center;"><a href="mailto:ronja.ohrnberg@helsinki.fi">ronja.ohrnberg@helsinki.fi</a></p>
 <h3 class="code-line" style="text-align:center;"><a id="SUMMARY_25"></a>SUMMARY</h3>
 
 <div class="center">
 <p>I am a theoretical physics student minoring in computer science with basic skills in programming in 9 languages. I am planning to continue to a Master’s programme in particle physics, which is the area of my Bachelor’s thesis (topic being Higgs mechanism and Two-Higgs doublet model, approved with grade 5/5). I have work experience both in- and outside academia.</p>
 </div>
+
+<!--
+  </div>
+</div> -->
+
 <div class="row">
-<div class="column" style="background-color:#ffffff;">
+<!--  <div class="leftcolumn">
+    <div class="card"> -->
+<div class="column" style="background-color:#ffffff;"> 
 <h3 class="code-line"><a id="WORK_EXPERIENCE_29"></a>WORK EXPERIENCE</h3>
 <p class="has-line-data"><strong>Research assistant</strong>, University of Helsinki, Finland, Jul 2020 - Sept 2020</p>
 <p class="has-line-data"><strong>Teaching assistant</strong>, University of Helsinki, Finland Oct 2019 - Dec 2019</p>
@@ -89,23 +148,39 @@
 <p class="has-line-data"><strong>Research assistant</strong>, Institute for Atmospheric and Earth System Research, Helsinki, Finland, Jun 2018 - Aug 2018</p>
 <p class="has-line-data"><strong>Intern</strong>, Finnish Meteorological Institute, Helsinki, Finland, Jun 2017 - Aug 2017</p>
 <p class="has-line-data"><strong>Intern</strong>, University of Eastern Finland, Kuopio, Finland, Jun 2016</p>
-  </div>
-  <div class="column" style="background-color:#ffffff;">
-<h3 class="code-line"><a id="EDUCATION_43"></a>EDUCATION</h3>
-<p class="has-line-data">BSc in Theoretical Physics, University of Helsinki, Finland, 2017 - Ongoing</p>
-<p class="has-line-data">Bilingual International Baccalaureate Diploma Program, Helsingin Suomalainen Yhteiskoulu, Helsinki, Finland, 2014 - 2017</p>
-<h3 class="code-line"><a id="POSITIONS_OF_RESPONSIBILITY_49"></a>POSITIONS OF RESPONSIBILITY</h3>
-<p class="has-line-data"><strong>Chairperson</strong>, Association of Finnish Students of Physics and Mathematics, Finland, 2020</p>
-<p class="has-line-data"><strong>Chairperson</strong>, IntegraatioFest 2020 -committee (a committee planning yearly conference for Finnish students of mathematics and physics), Finland, 2020</p>
-<p class="has-line-data"><strong>Student representative and deputy representative</strong>, different councils and groups in the official university strategy and organisation related affairs, 2019 - Ongoing</p>
-<p class="has-line-data"><strong>Member of board</strong>, Resonanssi ry (a student organization for students of Physical Sciences), 2018 - Ongoing</p>
-<pclass="has-line-data">Also other positions of responsibility not specified here.</p>
-<h3 class="code-line"><a id="REFERENCES_59"></a>REFERENCES</h3>
-<p class="has-line-data">Available upon request.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+</div>
+<div class="column" style="background-color:#ffffff;"> 
+  <h3 class="code-line"><a id="EDUCATION_43"></a>EDUCATION</h3>
+  <p class="has-line-data">BSc in Theoretical Physics, University of Helsinki, Finland, 2017 - Ongoing</p>
+  <p class="has-line-data">Bilingual International Baccalaureate Diploma Program, Helsingin Suomalainen Yhteiskoulu, Helsinki, Finland, 2014 - 2017</p>
+  <h3 class="code-line"><a id="POSITIONS_OF_RESPONSIBILITY_49"></a>POSITIONS OF RESPONSIBILITY</h3>
+  <p class="has-line-data"><strong>Chairperson</strong>, Association of Finnish Students of Physics and Mathematics, Finland, 2020</p>
+  <p class="has-line-data"><strong>Chairperson</strong>, IntegraatioFest 2020 -committee (a committee planning yearly conference for Finnish students of mathematics and physics), Finland, 2020</p>
+  <p class="has-line-data"><strong>Student representative and deputy representative</strong>, different councils and groups in the official university strategy and organisation related affairs, 2019 - Ongoing</p>
+  <p class="has-line-data"><strong>Member of board</strong>, Resonanssi ry (a student organization for students of Physical Sciences), 2018 - Ongoing</p>
+  <p class="has-line-data">Also other positions of responsibility not specified here.</p>
+  <h3 class="code-line"><a id="REFERENCES_59"></a>REFERENCES</h3>
+  <p class="has-line-data">Available upon request.</p>
+  <br>
+    </div> 
 
-  </div>
-  </div>
+    </div>
+    
+  </div> 
+  
+</div>
 <!-- <h2 class="code-line"><a id="RONJA_HRNBERG_19"></a>RONJA ÖHRNBERG</h2>
 <p class="has-line-data"><a href="mailto:ronja.ohrnberg@helsinki.fi">ronja.ohrnberg@helsinki.fi</a></p>
 <h3 class="code-line"><a id="SUMMARY_25"></a>SUMMARY</h3>

@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
+      .serif {
+      font-family: "Times New Roman", Times, serif;
+      }
+
+      .sansserif {
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .monospace {
+      font-family: "Lucida Console", Courier, monospace;
+      }
+      
       ul {
       list-style-type: none;
       margin: 0;
@@ -30,18 +44,101 @@
       background-color: #222;
       }
 
+      /* Header/Blog Title */
+      .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+      font-family: sansserif;
+      padding: 20px;
+      background: #f1f1f1;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+      float: center;
+      width: 100%;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+      float: left;
+      width: 50%;
+      padding: 20px;
+
+      }
+
+      .rightsidebar {
+      float: right;
+      width: 30%;
+      padding: 20px;
+      
+      }
+      
+      
+      
+
     </style>
     
-    <title>My homepage</title>
+    <title>Homepage - Ronja Öhrnberg</title>
   </head>
   <body>
     <ul>
-      <li><a class="active" href="#home">Home</a></li>
+      <li><a class="active" href="#index">Home</a></li>
       <li><a href="cv.html">CV</a></li>
-      <!--<li><a href="#contact">Contact</a></li>-->
+      <li><a href="blog.html">Blog</a></li>
       </ul>
-    <h1>Site where I try html things</h1>
-    <p>The most basic html site you'll find</p>
+
+    <div class="header">
+      <h3>My homepage</h3>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+	<div class="card">
+	  <h1 style="text-align:center;">Site where I try html things</h1>
+	  <p class="monospace">Welcome. I also try internet things. Maybe blog things too.</p>
+	</div>
+      </div>
+    </div>
+<!--
+    <div class="row">
+      <div class="column">
+	<div class="card">
+	  
+	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="rightsidebar">
+	<div class="card">
+	  
+	</div>
+      </div>
+    </div>
+    -->
   </body>
 </html>
 
+	
