@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
       .serif {
-      font-family: "Times New Roman", Times, serif;
+      font-family: *"Times New Roman", Times, serif;
       }
 
       .sansserif {
@@ -13,7 +13,7 @@
       }
 
       .monospace {
-      font-family: "Lucida Console", Courier, monospace;
+      font-family: monaco,Consolas,Lucida Console,monospace; 
       }
       
       ul {
@@ -29,6 +29,7 @@
       }
 
       li a {
+      font-family: monaco,Consolas,Lucida Console,monospace; 
       display: block;
       color: white;
       text-align: center;
@@ -111,13 +112,16 @@
       }
 
       h3 {
+      font-family: monaco,Consolas,Lucida Console,monospace;
       position: absolute;
       left: 50%;
       top: 50%;
       color: white;
       transform: translate(-50%, -50%);
       }
-      
+
+      h4 {font-family: monaco,Consolas,Lucida Console,monospace;}
+
     </style>
     
     <title>Homepage - Ronja Öhrnberg</title>
@@ -149,8 +153,8 @@
       <div class="rightsidebar">
 	<div class="card">
 	  <h4 style="text-align:center;">Contact</h4>
-	  <p style="text-align:center;"> <a href="https://www.linkedin.com/in/ronja-%C3%B6hrnberg/" target="_blank">LinkedIn</a> </p>
-	  <p style="text-align:center;"> <a href="https://github.com/ronjaohrnberg" target="_blank">Github</a> </p>
+	  <p style="text-align:center; font-family: monaco,Consolas,Lucida Console,monospace;"> <a href="https://www.linkedin.com/in/ronja-%C3%B6hrnberg/" target="_blank">LinkedIn</a> </p>
+	  <p style="text-align:center; font-family: monaco,Consolas,Lucida Console,monospace;"> <a href="https://github.com/ronjaohrnberg" target="_blank">Github</a> </p>
 	</div>
       </div>
 <!--    </div>
@@ -159,7 +163,7 @@
       <div class="leftcolumn">
 	<div class="card">
 	  <h4 style="text-align:center;">About me</h4>
-	  <p style="text-align:center;"> I'm a theoretical physics student from the University of Helsinki. This site is for trying out html-stuff. Images are mine, throw a message at me if you want to use them for something.</p>
+	  <p class="sansserif" style="text-align:center;"> I'm a theoretical physics student from the University of Helsinki. This site is for trying out html-stuff. Images are mine, throw a message at me if you want to use them for something.</p>
 	</div>
       </div>
     </div>
