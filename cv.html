@@ -2,48 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="website.css">
+
     <style>
 
-      .serif {
-      font-family: "Times New Roman", Times, serif;
-      }
-
-      .sansserif {
-      font-family: Arial, Helvetica,sans-serif;
-      }
-
-      .monospace {
-      font-family: "Lucida Console", Courier, monospace;
-      }
-      
-      ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      }
-
-      li {
-      float: left;
-      }
-
-      li a {
-      font-family: monaco,Consolas,Lucida Console,monospace;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      }
-
-      li a:hover:not(.active) {
-      background-color: #111;
-      }
-
-      .active {
-      background-color: #222;
-      }
+  
       * {
       box-sizing: border-box;
       }
@@ -51,9 +14,10 @@
       .center {
       margin: auto;
       width: 70%;
-      <!-- border: 3px solid #73AD21;-->
+      /* border: 3px solid #73AD21; */
       padding: 10px;
       }
+
       .box {
       float: center;
       text-align: center;
@@ -68,8 +32,6 @@
       padding: 20px;
 
       }
-
-
 
       .row:after {
       content: "";
@@ -109,7 +71,7 @@
       height:200px;
       }
 
-      .image-container {
+     .image-container {
       position:relative;
       margin:0 auto;
       background:url(https://i.imgur.com/Nd52IrE.jpg) no-repeat center center; /*4sdyDlC.jpg   pgQHM9M.jpg     Nd52IrE.jpg  */
@@ -119,24 +81,18 @@
       height:100%;
       }
 
-      h3 {
-      font-family: monaco,Consolas,Lucida Console,monospace;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      color: white;
-      transform: translate(-50%, -50%);
-      }
-      
-
-      h4 {font-family: monaco,Consolas,Lucida Console,monospace;}
-
-      p {font-family: Arial, Helvetica, sans-serif;}
       
     </style>
     <title>CV - Ronja Öhrnberg</title>
   </head>
   <body>
+
+
+    <div class="header">
+      <div class="container">
+	<div class="image-container"><h3>Curriculum Vitae</h3></div>
+      </div>
+    </div>
     <ul>
       <li><a  href="index.html">Home</a></li>
       <li><a class="active" href="cv.html">CV</a></li>
@@ -145,51 +101,42 @@
     </ul>
 
 
-    <div class="header">
-      <div class="container">
-	<div class="image-container"><h3>Curriculum Vitae</h3></div>
-      </div>
-    </div>
-
-
 <div class="row">
   <div class="leftcolumn">
     <div class="card"> 
 
-    <h2 class="code-line" style="text-align:center;font-family: monaco,Consolas,Lucida Console,monospace;"><a id="RONJA_HRNBERG_19"></a>RONJA ÖHRNBERG</h2>
-<p class="sansserif" class="has-line-data" style="text-align:center;"><a href="mailto:ronja.ohrnberg@helsinki.fi">ronja.ohrnberg@helsinki.fi</a></p>
-<h4 style="text-align:center;"><a id="SUMMARY_25"></a>SUMMARY</h4>
-
+    <h2 style="text-align:center;" class="monospace"><a id="RONJA_OHRNBERG"></a>RONJA ÖHRNBERG</h2>
+<p class="sansserif" style="text-align:center;"><a href="mailto:ronja.ohrnberg@helsinki.fi">ronja.ohrnberg@helsinki.fi</a></p>
+<h4 style="text-align:center;"><a id="SUMMARY"></a>SUMMARY</h4>
  <div class="center"> 
    <p>I am a theoretical physics student minoring in computer science with basic skills in programming in 9 languages. I am planning to continue to a Master’s programme in particle physics, which is the area of my Bachelor’s thesis (topic being Higgs mechanism and Two-Higgs doublet model, approved with grade 5/5). I have work experience both in- and outside academia.</p>
-   <p style="text-align:center;">Click <a href="ronja_ohrnberg_cv_updated240620.pdf" target="_blank">here</a> if you want a pdf-file of my CV.</p> 
+   <p style="text-align:center;">Click <a href="ronja_ohrnberg_cv_updated180820.pdf" target="_blank">here</a> if you want a pdf-file of my CV.</p> 
  </div> 
 
 
 <div class="row">
-
 <div class="column" style="background-color:#ffffff;"> 
-<h4 class="code-line"><a id="WORK_EXPERIENCE_29"></a>WORK EXPERIENCE</h4>
-<p class="has-line-data"><strong>Research assistant</strong>, University of Helsinki, Finland, Jul 2020 - Sept 2020</p>
-<p class="has-line-data"><strong>Teaching assistant</strong>, University of Helsinki, Finland Oct 2019 - Dec 2019</p>
-<p class="has-line-data"><strong>Intern</strong>, Fujitsu Software Technologies, Shin-Yokohama, Japan, Jun 2019 - Aug 2019</p>
-<p class="has-line-data"><strong>Research assistant</strong>, Institute for Atmospheric and Earth System Research, Helsinki, Finland, Jun 2018 - Aug 2018</p>
-<p class="has-line-data"><strong>Intern</strong>, Finnish Meteorological Institute, Helsinki, Finland, Jun 2017 - Aug 2017</p>
-<p class="has-line-data"><strong>Intern</strong>, University of Eastern Finland, Kuopio, Finland, Jun 2016</p>
+<h4><a id="WORK_EXPERIENCE"></a>WORK EXPERIENCE</h4>
+<p><strong>Research assistant</strong>, University of Helsinki, Finland, Jul 2020 - Sept 2020</p>
+<p><strong>Teaching assistant</strong>, University of Helsinki, Finland, Oct 2019 - Dec 2019, and Sep 2020 - Oct 2020 <br> (Courses: Scientific computing I and Quantum physics applications II - Condensed matter and elementary particles)</p>
+<p><strong>Intern</strong>, Fujitsu Software Technologies, Shin-Yokohama, Japan, Jun 2019 - Aug 2019</p>
+<p><strong>Research assistant</strong>, Institute for Atmospheric and Earth System Research, Helsinki, Finland, Jun 2018 - Aug 2018</p>
+<p><strong>Intern</strong>, Finnish Meteorological Institute, Helsinki, Finland, Jun 2017 - Aug 2017</p>
+<p><strong>Intern</strong>, University of Eastern Finland, Kuopio, Finland, Jun 2016</p>
 
 </div>
 <div class="column" style="background-color:#ffffff;"> 
-  <h4 class="code-line"><a id="EDUCATION_43"></a>EDUCATION</h4>
-  <p class="has-line-data">BSc in Theoretical Physics, University of Helsinki, Finland, 2017 - Ongoing</p>
-  <p class="has-line-data">Bilingual International Baccalaureate Diploma Program, Helsingin Suomalainen Yhteiskoulu, Helsinki, Finland, 2014 - 2017</p>
-  <h4 class="code-line"><a id="POSITIONS_OF_RESPONSIBILITY_49"></a>POSITIONS OF RESPONSIBILITY</h4>
-  <p class="has-line-data"><strong>Chairperson</strong>, Association of Finnish Students of Physics and Mathematics, Finland, 2020</p>
-  <p class="has-line-data"><strong>Chairperson</strong>, IntegraatioFest 2020 -committee (a committee planning yearly conference for Finnish students of mathematics and physics), Finland, 2020</p>
-  <p class="has-line-data"><strong>Student representative and deputy representative</strong>, different councils and groups in the official university strategy and organisation related affairs, 2019 - Ongoing</p>
-  <p class="has-line-data"><strong>Member of board</strong>, Resonanssi ry (a student organization for students of Physical Sciences), 2018 - Ongoing</p>
-  <p class="has-line-data">Also other positions of responsibility not specified here.</p>
-  <h4 class="code-line"><a id="REFERENCES_59"></a>REFERENCES</h4>
-  <p class="has-line-data">Available upon request.</p>
+  <h4><a id="EDUCATION"></a>EDUCATION</h4>
+  <p>BSc in Theoretical Physics, University of Helsinki, Finland, 2017 - Ongoing</p>
+  <p>Bilingual International Baccalaureate Diploma Program, Helsingin Suomalainen Yhteiskoulu, Helsinki, Finland, 2014 - 2017</p>
+  <h4><a id="POSITIONS_OF_RESPONSIBILITY"></a>POSITIONS OF RESPONSIBILITY</h4>
+  <p><strong>Chairperson</strong>, Association of Finnish Students of Physics and Mathematics, Finland, 2020</p>
+  <p><strong>Chairperson</strong>, IntegraatioFest 2020 -committee (a committee planning yearly conference for Finnish students of mathematics and physics), Finland, 2020</p>
+  <p><strong>Student representative and deputy representative</strong>, different councils and groups in the official university strategy and organisation related affairs, 2019 - Ongoing</p>
+  <p><strong>Member of board</strong>, Resonanssi ry (a student organization for students of Physical Sciences), 2018 - Ongoing</p>
+  <p  >Also other positions of responsibility not specified here.</p>
+  <h4><a id="REFERENCES"></a>REFERENCES</h4>
+  <p>Available upon request.</p>
   <br>
     </div> 
 
