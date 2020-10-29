@@ -4,6 +4,9 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="website.css">
     <style>
+      p {color:white;}
+      h2 {color:white;}
+      h5 {color:white;}
       .leftcolumn {
       float: center;
       width: 100%;
@@ -47,11 +50,35 @@
       width:100%;
       height:100%;
       }
+
+
+      /* Scrolling effects */
+      .test1 {
+      transition: all 1.3s ease-in-out;
+      background:url(https://live.staticflickr.com/65535/50311215953_8e7c5a1370_h.jpg) center;
+      padding: 20px;
+      margin-top: 20px;
+      }
+      .test2 {
+      transition: all 1.3s ease-in-out;
+
+      /*-webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+      */
+      
+      background:url(https://live.staticflickr.com/65535/50311886656_563de7f3b5_c.jpg) center;
+      padding: 20px;
+      margin-top: 20px;
+      }
+      }
     </style>
     
     <title>Blog - Ronja Öhrnberg</title>
   </head>
-  <body>
+  <!--<body>-->
+  <body style="height:3000px">
 
     <div class="header">
       <div class="container">
@@ -70,11 +97,83 @@
       <h3>My blog</h3>
     </div> -->
 
+    <!--
     <div class="row">
       <div class="leftcolumn">
-	<div class="card">
+	<div class="card" style="background:url(https://live.staticflickr.com/65535/50311883756_8c90ac5730_h.jpg) center;">
+	  <h2 style="color:white;">Meme</h2>
+	  <h5 style="color:white;">Ronja, Sept 6, 2020</h5>
+	  <p style="color:white;"> Just trying out new stuff. </p>
+	</div>
+      </div>
+    </div>
+    -->
+    <div class="row">
+
+      <div class="leftcolumn">
+<!--	<div class="reveal-holder"> -->
+	  <div class="card" style="background:url(https://live.staticflickr.com/65535/50311215953_8e7c5a1370_h.jpg) center;">
+
+	  <h2>Dirac equation</h2>
+	  <h5>Ronja, Oct 29, 2020</h5>
+	  <p>The following is an essay that I wrote as a part of a coursework.</p>
+	  <p>
+	    The Dirac equation is a wave equation combining quantum mechanics and special relativity. Prior to its formulation, the Schrödinger equation was the yardstick of quantum mechanics, but as good as it was at describing wave functions of non-relativistic particles, it worked very poorly with special relativity.
+	   </p> 
+	   <p>
+	    
+The solution to this was the Klein-Gordon equation, which combined the Schrödinger equation with the Einstein's energy-momentum relation. The equation has both positive and negative energy solutions (which was puzzling at the time, but is no longer considered a problem since it's understood that the negative energy solutions happen necessarily in quantum mechanics). The real problem of the Klein-Gordon equation is that combined with a probability current and deriving the continuity equation, we can see it produces negative probability densities. Since in quantum mechanics, unline in classical physics, these solutions cannot be discarded, it was a true problem as to how to interpret these unphysical negative energy densities.
+</p> 
+	   <p>
+	   
+This is where the Dirac equation steps in. It is linear in time and space by the factorization of the Klein-Gordon equation. It can be shown that the mutually anti-commuting factors in the equation are (at minimum) 4-by-4 matrices, which leads to the requirement that the wave function is a 4-component vector. The covariant form of the Dirac equation is the equation written in terms of the Dirac gamma matrices: this form makes the equation simpler, and Lorentz invariant. The convenient way to represent the factors of the equation is the Dirac-Pauli representation, where the Dirac gamma matrices are written in terms of the Pauli spin matrices.  The plane wave solutions of the free Dirac equation, the 4-component wave functions, are Dirac spinors. Their adjoint spinors, Dirac adjoints, are convenient in deriving the Feynman rules.
+</p> 
+	   <p>
+	   
+The plane wave solution to the Dirac equation also gives rise to the concept of helicity. The solution fully describes the intrinsic spin of the particle (electron for example having a spin state +1/2 or -1/2), and helicity is the projection of spin onto the direction of momentum. In the Dirac equation, the plane wave solution gives eigenstates of the spin operator for motion along z-axis (with this chosen also as the direction of the spin), which then corresponds to the helicity eigenstates. The helicity eigenstates are highly useful in calculations, for example in calculating the cross section of a process. </p> 
+	   <p>
+	   
+
+The continuity equation can be computed from the Dirac equation, and from this one can derive the probability density and the probability current, the components of the four-vector probability current. In the case of the Dirac equation, it can be shown that the resulting probability density is positive definite - and thus they can be interpreted as truly physical probability densities. 
+</p> 
+	   <p>
+	   
+But even though the probability densities are positive, unlike in the Klein-Gordon equation, the Dirac equation still has the negative energy solutions. The interpretation Dirac proposed to the negative energies was that there was a sea of electrons with negative energy states and following the Pauli exclusion principle. Whenever an electron with a negative energy state would be sufficiently excited, it would leave a 'hole', which would appear as positive. This hole would have the same properties as an electron, but a positive charge - effectively, a positron. Thus the existence of antimatter was predicted, and four years after Dirac published his paper on the equation, the positron was found experimentally in 1932. The formalism for antiparticles evolved, and today the sea of antiparticles is an outdated view (one reason being that it doesn't work for bosons that don't follow the Pauli exlusion principle, for example), and the Feynman-Stückelberg interpretation is more commonly used: that the negative energy solutions of the Dirac equation correspond mathematically to particles traveling backwards in time.
+
+	  </p>
+	  </div>
+       </div>
+    </div>
+	      
+    
 	  
-	  <h2>My journey into Effective Altruism</h2>
+    <div class="row">
+
+      <div class="leftcolumn">
+<!--	<div class="reveal-holder"> -->
+	  <!--<div class="card" style="background:url(https://live.staticflickr.com/65535/50311215953_8e7c5a1370_h.jpg) center; height:500px">-->
+	  <div id="text1" class="card" style="height:500px">
+	  
+	  <h2>Two-Higgs Doublet Model 101</h2>
+	  <h5>Ronja, Sep 06, 2020</h5>
+	  <p>
+	    Two-Higgs doublet model was the topic of my Bachelor's thesis, and I thought that maybe a blog post about it would be interesting. (Really this post is so that I can try out the new visuals at the site.)
+	  </p>
+	  <p> To be continued...</p>
+	  </div>
+
+<!--	</div> -->
+      </div>
+    </div>
+    
+      <!-- same thing twice -->
+    <div class="row">
+      <div class="leftcolumn">
+	<div class="reveal-holder">
+	  <!--<div class="card" style="background:url(https://live.staticflickr.com/65535/50311215953_8e7c5a1370_h.jpg) center;">-->
+	  <div id="text2" class="card" style="height:500px">
+	  
+	  <h2>My Journey into Effective Altruism</h2>
 	  <h5>Ronja, Jun 23, 2020</h5>
 
 	  <p>Last year, I met an acquaintance at a university fair. We hadn't been talking in a couple of years, but in that time, he had seemingly founded EA Helsinki, my now local group. I chatted with him for a little while, and as I'd heard about Effective Altruism and was slightly interested, I decided to give it a go. Although I haven't been very active, I've been learning new things, and that's always nice!</p>
@@ -83,7 +182,11 @@
 	  <p>I'm still figuring out what do I want to do EA-wise. Ideally, I would want to link it to physics, but I haven't found any good ideas for that. The journey continues. </p>
 	</div>
 
-<!--	
+	</div>
+      </div>
+      </div>
+
+      <!--	
 	<div class="card">
 	  <h2>TITLE HEADING</h2>
 	  <h5>Title description, Sep 2, 2017</h5>
@@ -92,7 +195,36 @@
 	  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 	</div>  
 -->
-	  </div>
+
+
+<!-- after this, script -->
+
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop < 400) {document.getElementById("text1").className = "test1";}
+else {document.getElementById("text2").className = "test2";}
+
+  }									   
+</script> 
+
+    <!--<script>
+      window.onscroll = function() {Function()};
+      
+      function Function() {
+
+      if (document.body.scrollTop == 1500 || document.documentElement.scrollTop == 1500) {
+      document.getElementById("text2").className = "test2";
+      } else {
+      document.getElementById("text2").className = "test2";
+      }
+
+      }
+
+	</script> -->
      </body>
 </html>
 
