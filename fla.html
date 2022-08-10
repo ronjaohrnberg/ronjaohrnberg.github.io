@@ -17,13 +17,15 @@
       width: 70%;
       /* border: 3px solid #73AD21; */
       padding: 10px;
+      background: #291d0d;
       }
 
       .box {
       float: center;
       text-align: center;
       width: 30%;
-      padding: 15px
+      padding: 15px;
+      background: #291d0d;
       }
       
 
@@ -31,6 +33,7 @@
       float: left;
       width: 50%;
       padding: 20px;
+      background: #917c5e;
 
       }
 
@@ -38,51 +41,64 @@
       content: "";
       display: table;
       clear: both;
+      background:#291d0d;
       }
 
       .header {
       padding: 30px;
       font-size: 40px;
       text-align: center;
-      background: white;
+      background: #2b0300; /* white; */
       }
 
 
       body {
       font-family: sansserif;
       padding: 20px;
-      background: #f1f1f1;
+      background: #2b0300;/* #f1f1f1; */
       }
 
 
       .leftcolumn {
       float: center;
       width: 100%;
+      background:#2b0300;
       }
 
       .card {
-      background-color: white;
+	  background-color: #2b0300; /* white; */
       padding: 20px;
       margin-top: 20px;
+      background: #2b0300;
       }
 
 
       .container {
       width: 100%;
       height:200px;
+      background: #2b0300;
       }
 
      .image-container {
       position:relative;
       margin:0 auto;
-      background:url(https://i.imgur.com/Nd52IrE.jpg) no-repeat center center; /*4sdyDlC.jpg   pgQHM9M.jpg     Nd52IrE.jpg  */
+      background:#2b0300;
+      /* background:url(https://i.imgur.com/Nd52IrE.jpg) no-repeat center center; /\*4sdyDlC.jpg   pgQHM9M.jpg     Nd52IrE.jpg  *\/ */
       background-size:cover;
       max-width:1800px;
       width:100%;
       height:100%;
       }
 
-      
+     li a {
+	 color:#ff938a; /* #2b0300; */
+     }
+
+     button {
+	 background:#333; /* #2b0300; */
+	 color:#ff938a; /* #2b0300; */
+     }
+
     </style>
     <title>FLA - Ronja Öhrnberg</title>
   </head>
@@ -95,7 +111,7 @@
       </div>
     </div>
     <ul>
-      <li><a  href="index.html">Home</a></li>
+      <li style="color=#291d0d"><a  href="index.html">Home</a></li>
       <li><a  href="cv.html">CV</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="birds.html">Birds</a></li>
@@ -108,7 +124,7 @@
     <div class="card"> 
  </div> 
  <div class="row">
-   <div class="column" style="background-color:#ffffff; min-width:200px;">
+   <div class="column" style="min-width:200px;">
 
 
 
@@ -186,7 +202,7 @@
 </div>
 
 
-<div class="column" style="background-color:#ffffff;min-width:200px;"> 
+<div class="column" style="min-width:200px;"> 
 
    <h4><a id="FLAvourWeak"></a>[FLA]vour of the Weak (1997)</h4>
         <button onclick="showhideFLAvourWeak()">Show more/Hide</button>
