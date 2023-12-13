@@ -16,7 +16,7 @@
       }
 
       body {background: #fa8ebd;padding:10px;right-padding:10px;}
-      .card {background: #fadfb6; padding:30px;}
+  
       p {color:#290666;}
       h2 {color:#290666;}
       h4 {color:#290666; font-family:courier;}
@@ -51,13 +51,45 @@
       padding: 0;
       }
       }
+      
+      .btncontainer {
+	  position: relative;
+	  /* float: left; */
+	  margin: 10px 0px 10px 70%;
+	  /* height: 200px; */
+	  /* max-width:3000px;	   */
+	  width: 30%;
+	  height:70px;
+      }
 
       
       .container {
-      width: 100%;
-      height:200px;
-      background: #fa8ebd;
+	  width: 100%;
+	  height:200px;
+	  background: #fa8ebd;
       }
+
+      
+    /* .card {background: #fadfb6; padding:30px;} */
+      .filterDiv {
+	  /* width: 100%; */
+	  /* height:200px; */
+	  background: #fadfb6;
+	  padding:30px;
+	  float: center;
+	  /* background-color: #2196F3; */
+	  /* color: #ffffff; */
+	  /* width: 100px; */
+	  /* line-height: 100px; */
+	  /* text-align: center; */
+	  margin: 10px 0px 10px 0px;
+	  display: none;
+      }
+
+      .show {
+      	  display: block;
+      }
+
 
       .image-container {
       position:relative;
@@ -69,6 +101,34 @@
       height:100%;
       }
 
+
+      /* .container { */
+      /* 	  margin-top: 20px; */
+      /* 	  overflow: hidden; */
+      /* } */
+      /* Style the buttons */
+      .btn {
+	  /* float: center; */
+	  margin: 10px;
+	  border: none;
+	  color: #ffffff;
+	  font-family: courier;
+	  font-size: 17px;
+	  outline: none;
+	  padding: 12px 16px;
+	  background-color: #de1d3a;
+	  cursor: pointer;
+      }
+      
+      .btn:hover {
+	  background-color: #fadfb9;
+	  text-decoration: underline;
+      }
+      
+      .btn.active {
+	  background-color: #666;
+	  color: white;
+      }
 
       /* Scrolling effects */
       /* .test1 { */
@@ -110,7 +170,16 @@
       <li><a href="birds.html">Birds</a></li>
     </ul>
 
-    
+
+<div class="btncontainer"
+    <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('three')"> 3/3</button>
+      <button class="btn" onclick="filterSelection('two')"> 2/3</button>
+      <button class="btn" onclick="filterSelection('one')"> 1/3</button>
+      <button class="btn" onclick="filterSelection('summary')"> Summary</button>
+    </div>
+</div>    
 <!--    <div class="header">
       <h3>My blog</h3>
     </div> -->
@@ -189,7 +258,8 @@
 <!--     </div> -->
 
 <div class="row">
-	  <div class="card">
+  <div class="filterDiv two">
+    <!-- <div class="filterDiv"> -->
     <h2>Vuoden 2023 19. kirja</h2>
     <h5>Ronja, Dec 13, 2023</h5>
     <h4>Liukkonen: Vierastila</h4>
@@ -198,11 +268,12 @@
     <p>
       Sekava ja huvittava kertomus, jossa tärkeää ei ole se, mitä tapahtuu vaan se, miten tapahtuu. Kielellistä iloittelua, Liukkosen paikoin erinomaiset kielikuvat ja rekisterin yllättävä muutos tuovat hymyn huulille. Lisäksi tajunnanvirta saa mukavasti ajatukset liikkeelle. Toisaalta ylläolevat seikat puuduttavat pidemmän päälle eikä juoni tosiaan tarjoile sen suurempaa mielenkiintoa ylläpitävää kokonaisuutta. Lukemisen ja kielen ilosta luettava kirja.
      </p>
-       </div>
-    </div>
+    <!-- </div> -->
+  </div>
+</div>
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 18. kirja</h2>
     <h5>Ronja, Dec 13, 2023</h5>
     <h4>Bernhard: Syy (suom. Sarrivaara)</h4>
@@ -217,7 +288,7 @@
     
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 17. kirja</h2>
     <h5>Ronja, Nov 29, 2023</h5>
     <h4>Kang: Valkoinen kirja (suom. Salminen)</h4>
@@ -231,7 +302,7 @@
     
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 16. kirja</h2>
     <h5>Ronja, Nov 29, 2023</h5>
     <h4>Nylén: Hyvyys ja muista tekstejä näyttämölle</h4>
@@ -245,7 +316,7 @@
     
       
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv two">      	    
     <h2>15th book of 2022</h2>
     <h5>Ronja, Nov 29, 2022</h5>
     <h4>Levy: Real Estate</h4>
@@ -259,7 +330,7 @@
 
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 14. kirja</h2>
     <h5>Ronja, Nov 29, 2023</h5>
     <h4>Saisio: Passio</h4>
@@ -273,7 +344,7 @@
 
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 13. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Rauma: Hävitys: Tapauskertomus</h4>
@@ -287,7 +358,7 @@
     
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2023 12. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Lipson: Jäätelökauppias</h4>
@@ -302,7 +373,7 @@
 
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2023 11. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Hua: Xu Sanguanin elämä ja verikaupat (suom. Sainio)</h4>
@@ -316,7 +387,7 @@
 
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 10. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Liksom: Tyhjän tien paratiisit</h4>
@@ -332,7 +403,7 @@
 
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2023 9. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Savonlahti: Kai minä halusin tätä</h4>
@@ -347,7 +418,7 @@
 
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2023 8. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Onkeli: Meiltähän tämä käy</h4>
@@ -362,7 +433,7 @@
 
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2023 7. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Murata: Lähikaupan nainen (suom. Porrasmaa)</h4>
@@ -379,7 +450,7 @@
     
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 6. kirja</h2>
     <h5>Ronja, Nov 14, 2023</h5>
     <h4>Rauma: Seksistä ja matematiikasta</h4>
@@ -393,7 +464,7 @@
     
     
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 5. kirja</h2>
     <h5>Ronja, Jan 23, 2023</h5>
     <h4>Lipson: Detroit</h4>
@@ -406,7 +477,7 @@
        </div>
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 4. kirja</h2>
     <h5>Ronja, Jan 23, 2023</h5>
     <h4>Ditlevsen: Nuoruus (suom. Huttunen)</h4>
@@ -419,7 +490,7 @@
     </div>
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2023 3. kirja</h2>
     <h5>Ronja, Jan 23, 2023</h5>
     <h4>Ulitskaja: Sielun ruumis (suom. Pikkupeura)</h4>
@@ -433,7 +504,7 @@
 
     
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv three">      	    
     <h2>Vuoden 2023 2. kirja</h2>
     <h5>Ronja, Jan 11, 2023 (edit Jan 23, 2023)</h5>
     <h4>Ditlevsen: Lapsuus (suom. Huttunen)</h4>
@@ -449,7 +520,7 @@
 
     
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv three">      	    
     <h2>Vuoden 2023 1. kirja</h2>
     <h5>Ronja, Jan 05, 2023</h5>
     <h4>Cantell: Kaikki tuoksuu lumelta</h4>
@@ -463,7 +534,7 @@
 
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv summary">
     <h2>Vuoden 2022 teemat</h2>
     <h5>Ronja, Jan 23, 2023</h5>
     <p>
@@ -478,7 +549,7 @@
     </div>
       
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv three">      	    
     <h2>Vuoden 2022 19. kirja</h2>
     <h5>Ronja, Jan 04, 2023</h5>
     <h4>Virkkunen: Salassa pidettävä</h4>
@@ -491,7 +562,7 @@
        </div>
     </div>
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv two">      	    
     <h2>Vuoden 2022 18. kirja</h2>
     <h5>Ronja, Jan 04, 2023</h5>
     <h4>Shin: Hovitanssija (suom. Salminen)</h4>
@@ -504,7 +575,7 @@
        <!-- </div> -->
     </div>
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv two">      	    
     <h2>Vuoden 2022 17. kirja</h2>
     <h5>Ronja, Jan 04, 2022</h5>
     <h4>Kannas: Kirjeitä Japaniin</h4>
@@ -518,7 +589,7 @@
     </div>
     
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv two">      	    
     <h2>Vuoden 2022 16. kirja</h2>
     <h5>Ronja, Dec 5, 2022</h5>
     <h4>Liukkonen: Lapset auringon alla</h4>
@@ -532,7 +603,7 @@
     </div>
       
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv three">      	    
     <h2>Vuoden 2022 6. äänikirja</h2>
     <h5>Ronja, Dec 5, 2022</h5>
     <h4>Ohlsson: Nukketalo (suom. Menna, lukija Heikkinen)</h4>
@@ -549,7 +620,7 @@
 
       
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv one">      	    
     <h2>Vuoden 2022 15. kirja</h2>
     <h5>Ronja, Dec 5, 2022</h5>
     <h4>Tikkanen: Toinen silmä kiinni</h4>
@@ -564,7 +635,7 @@
 
 
     <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2022 14. kirja</h2>
     <h5>Ronja, Sep 15, 2022</h5>
     <h4>Cantell: Kesken jääneet hetket</h4>
@@ -580,7 +651,7 @@
 
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2022 13. kirja</h2>
     <h5>Ronja, Sep 15, 2022</h5>
     <h4>Supinen: Liha tottelee kuria</h4>
@@ -596,7 +667,7 @@
 
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv one">
     <h2>12e livre de 2022</h2>
     <h5>Ronja, Aug 10, 2022</h5>
     <h4>Bourdin: Gran Paradiso</h4>
@@ -609,7 +680,7 @@
        </div>
       
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv three">
     <h2>Vuoden 2022 11. kirja</h2>
     <h5>Ronja, Aug 10, 2022</h5>
     <h4>Krohn: Tainaron</h4>
@@ -625,7 +696,7 @@
       
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2022 5. äänikirja</h2>
     <h5>Ronja, Aug 10, 2022</h5>
     <h4>Kepler: Nukkumatti (suom. Uotila, lukija Kamula)</h4>
@@ -643,7 +714,7 @@
 
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2022 4. äänikirja</h2>
     <h5>Ronja, May 10, 2022</h5>
     <h4>Kepler: Tulitodistaja (suom. Uotila, lukija Kamula)</h4>
@@ -660,7 +731,7 @@
 
 
 <div class="row">
-	  <div class="card">
+	  <div class="filterDiv two">
     <h2>Vuoden 2022 10. kirja</h2>
     <h5>Ronja, May 10, 2022</h5>
     <h4>Han: Kolme porttia (suom. Sainio)</h4>
@@ -675,7 +746,7 @@
       
       
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv three">      	    
     <h2>Vuoden 2022 9. kirja</h2>
     <h5>Ronja, Apr 14, 2022</h5>
     <h4>Verronen: Karsintavaihe</h4>
@@ -690,7 +761,7 @@
 
 
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv two">      	    
     <h2>Vuoden 2022 3. äänikirja</h2>
     <h5>Ronja, Apr 14, 2022</h5>
     <h4>Kepler: Paganini ja paholainen (suom. Uotila, lukija Kamula)</h4>
@@ -708,7 +779,7 @@
       
       
 <div class="row">
-	  <div class="card">      	    
+	  <div class="filterDiv two">      	    
     <h2>Vuoden 2022 8. kirja</h2>
     <h5>Ronja, Apr 14, 2022</h5>
     <h4>Lipson: Kaikkein haikein leikki</h4>
@@ -721,7 +792,7 @@
     </div>
       
 <div class="row"> 
-	  <div class="card">
+	  <div class="filterDiv three">
       	    
 
       	    
@@ -740,7 +811,7 @@
       
 
 <div class="row">       
-	  <div class="card">
+	  <div class="filterDiv zero">
       	    
 
       	    
@@ -758,7 +829,7 @@
       
 
 <div class="row">       
-	  <div class="card">
+	  <div class="filterDiv two">
       	    
 
       	    
@@ -775,7 +846,7 @@
       
       
 <div class="row">       
-	  <div class="card">
+	  <div class="filterDiv two">
       	    
       	    
     <h2>Vuoden 2022 6. kirja</h2>
@@ -790,7 +861,7 @@
        </div>
       
 <div class="row">       
-	  <div class="card">
+	  <div class="filterDiv one">
       	    
     <h2>Vuoden 2022 5. kirja</h2>
     <h5>Ronja, Jan 27, 2022</h5>
@@ -804,7 +875,7 @@
        </div>
       
 <div class="row"> 
-	  <div class="card">
+	  <div class="filterDiv three">
 
       
     <h2>Vuoden 2022 4. kirja</h2>
@@ -821,7 +892,7 @@
 	  </div>
     </div>
 <div class="row"> 
-	  <div class="card">
+	  <div class="filterDiv three">
       
       	    
     <h2>Vuoden 2022 3. kirja</h2>
@@ -836,7 +907,7 @@
        </div>
 
 <div class="row">       
-	  <div class="card">
+	  <div class="filterDiv three">
       	    
     <h2>Vuoden 2022 2. kirja</h2>
     <h5>Ronja, Jan 27, 2022</h5>
@@ -851,7 +922,7 @@
 
 <div class="row">
         <!-- <div class="leftcolumn"> -->
-	  <div class="card"> <!-- style="background-color:#293829;" -->
+	  <div class="filterDiv one"> <!-- style="background-color:#293829;" -->
 
       	    
     <h2>Vuoden 2022 1. kirja</h2>
@@ -868,12 +939,61 @@
      <p></p>      
     
 
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+
+<!-- var btnContainer = document.getElementById("myBtnContainer"); -->
+<!-- var btns = btnContainer.getElementsByClassName("btn"); -->
+<!-- for (var i = 0; i < btns.length; i++) { -->
+<!--   btns[i].addEventListener("click", function(){ -->
+<!--     var current = document.getElementsByClassName("active"); -->
+<!--     current[0].className = current[0].className.replace(" active", ""); -->
+<!--     this.className += " active"; -->
+<!--   }); -->
+<!-- } -->
+    
+</script>     
+
+     
     
 <!--     <div class="row"> -->
 
 <!--       <div class="leftcolumn"> -->
 <!-- <\!--	<div class="reveal-holder"> -\-> -->
-<!-- 	  <div class="card"> -->
+<!-- 	  <div class="filterDiv"> -->
 
 	  
 	    
@@ -885,7 +1005,7 @@
 <!-- 	   </p>  -->
 <!-- 	   <p> -->
 	    
-<!-- The solution to this was the Klein-Gordon equation, which combined the Schrödinger equation with the Einstein's energy-momentum relation. The equation has both positive and negative energy solutions (which was puzzling at the time, but is no longer considered a problem since it's understood that the negative energy solutions happen necessarily in quantum mechanics). The real problem of the Klein-Gordon equation is that combined with a probability current and deriving the continuity equation, we can see it produces negative probability densities. Since in quantum mechanics, unline in classical physics, these solutions cannot be discarded, it was a true problem as to how to interpret these unphysical negative energy densities. -->
+<!-- The solution to this was the Klein-Gordon equation, which combined the Schrödinger equation with the Einstein's energy-momentum relation. The equation has both positive and negative energy solutions (which was puzzling at the time, but is no longer considered a problem since it's understood that the negative energy solutions happen necessarily in quantum mechanics). The real problem of the Klein-Gordon equation is that combined with a probability current and deriving the continuity equation, we can see it produces negative probability densities. Since in quantum mechanics, unline in classical physics, these solutions cannot be disfilterDived, it was a true problem as to how to interpret these unphysical negative energy densities. -->
 <!-- </p>  -->
 <!-- 	   <p> -->
 	   
